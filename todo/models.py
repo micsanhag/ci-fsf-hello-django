@@ -5,4 +5,7 @@ class Item(models.Model):
     name = models.CharField(max_length=50,
     null=False, blank=False)
     done = models.BooleanField(null=False,
-    blank=False)
+    blank=False, default=False)
+
+    def_str_(self):
+     return self.name
